@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslationsPipe } from './pipe/translations.pipe';
-import { TranslationsService } from './service/translations.service';
+// Constants
 import { TRANSLATION_PROVIDERS } from './constants/translation';
+// Pipe
+import { TranslationsPipe } from './pipe/translations.pipe';
+// Service
+import { TranslationsService } from './service/translations.service';
 
 @NgModule({
   imports: [CommonModule],
