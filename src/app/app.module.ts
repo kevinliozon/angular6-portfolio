@@ -16,6 +16,7 @@ import { TermsComponent } from './pages/terms/terms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProvidersModule } from './providers/providers.module';
 import { TranslationsModule } from './translations/translations.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TranslationsModule } from './translations/translations.module';
     BrowserModule,
     AppRoutingModule,
     ProvidersModule,
-    TranslationsModule
+    TranslationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
