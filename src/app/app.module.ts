@@ -15,6 +15,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProvidersModule } from './providers/providers.module';
+import { TranslationsModule } from './translations/translations.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProvidersModule } from './providers/providers.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProvidersModule
+    ProvidersModule,
+    TranslationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
