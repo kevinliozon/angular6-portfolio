@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+// Data
+import { ROLES } from '../../shared/data/mock-roles';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +8,8 @@ import { Injectable } from '@angular/core';
 export class RoleService {
 
   constructor() { }
+  public getRoles(): any {
+    return ROLES;
+  }
+
 }

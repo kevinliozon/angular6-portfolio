@@ -1,9 +1,8 @@
-<!--
 <article class="card-reg thumbnail" [class.active]="focusedItemBtn">
 
   <div class="row">
     <section class="card-image col-xs-4">
-      <figure class="img img-round&#45;&#45;sm">
+      <figure class="img img-round--sm">
         <img [src]="object.image || object.badge" [alt]="object.name || object.title">
       </figure>
     </section>
@@ -17,7 +16,7 @@
     </section>
   </div>
 
-  &lt;!&ndash; If not Codeschool certif (no badge attribute) &ndash;&gt;
+  <!-- If not Codeschool certif (no badge attribute) -->
   <footer class="card-link">
     <a class="btn-card"
        role="button"
@@ -30,7 +29,7 @@
       {{ 'more-info' | translate }}
     </a>
 
-    &lt;!&ndash; If Codeschool certif (has badge attribute) &ndash;&gt;
+    <!-- If Codeschool certif (has badge attribute) -->
     <a
       class="btn-card"
       [href]="object.url"
@@ -43,5 +42,3 @@
   </footer>
 
 </article>
--->
-Here is a card
