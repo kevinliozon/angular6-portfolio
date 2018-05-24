@@ -1,3 +1,3 @@
-export * from './translate.service';
+export * from '../service/translations.service';
 export * from './translation';
-export * from './translate.pipe';
+export * from '../pipe/translations.pipe';
