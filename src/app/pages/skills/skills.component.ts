@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+// Skills
+import { Skill } from '../../interfaces/skill.interface';
+import { SkillService } from '../../providers/skill/skill.service';
+// Services
+import { ModalService } from '../../providers/modal/modal.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +12,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  public skills: Skill[];
+  public value = '';
+  public detailsModal: any = {};
+  public typeModal: string;
+
+  constructor(private skillService: SkillService,
+              private modalService: ModalService) { }
 
   ngOnInit() {
+    this.skills = this.skillService.getSkills();
+  }
+
+  /**
+   * Affect the value to the filter
+   * @param filter
+   */
+  public filterFor(filter: string): void {
+    this.value = filter;
+  }
+
+  /**
+   * Open modal
+   * Resolve the item to display thanks to its id and type
+   *
+   * @param $event
+   * @param {string} type
+   * @returns {any}
+   */
+  public openModal($event: any, type: string): any {
+    this.typeModal = type;
+    this.detailsModal = this.modalService.openModal($event, type);
   }
 
 }

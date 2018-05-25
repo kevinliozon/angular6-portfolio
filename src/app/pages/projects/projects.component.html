@@ -1,3 +1,12 @@
-<p>
-  projects works!
-</p>
+<div class="container-stretch">
+  <app-filters [page]="'projects'" (selectFilter)="filterFor($event)"></app-filters>
+
+  <main class="row container-dual">
+    <section class="col-xs-12 col-sm-4 container-select block-center-xs">
+      <app-list-preview [objects]="projects" [type]="'project'" [filterValue]="filterValue" (focusedItem)="focusItem($event)"></app-list-preview>
+    </section>
+
+    <!-- PREVIEW -->
+    <app-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem" [type]="'project'"></app-preview>
+  </main>
+</div>
