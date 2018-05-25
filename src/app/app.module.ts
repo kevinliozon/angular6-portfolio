@@ -19,6 +19,13 @@ import { TranslationsModule } from './translations/translations.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ProvidersModule,
+    TranslationsModule,
+    SharedModule
+  ],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -32,13 +39,6 @@ import { SharedModule } from './shared/shared.module';
     SitemapComponent,
     SkillsComponent,
     TermsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ProvidersModule,
-    TranslationsModule,
-    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

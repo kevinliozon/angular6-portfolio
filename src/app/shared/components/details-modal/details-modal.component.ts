@@ -3,8 +3,8 @@ import { GAnalyticsService } from '../../../providers/g-analytics/g-analytics.se
 
 @Component({
   selector: 'app-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.scss']
+  templateUrl: './details-modal.component.html',
+  styleUrls: ['./details-modal.component.scss']
 })
 
 export class DetailsModalComponent {
