@@ -20,17 +20,13 @@
   }
 }
 
-.btn-reg {
+.btn-primary {
   @extend .btn;
   @extend .btn-dark;
   @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
   @include transition(all, 0.3s, ease-in, 0s);
   min-width: 100px;
   padding: 10px;
-}
-
-.btn-primary {
-  @extend .btn-reg;
 
   &:hover,
   &:active {

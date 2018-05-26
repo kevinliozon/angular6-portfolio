@@ -20,7 +20,7 @@ export class CodeschoolService {
    * @returns {Observable<any>}
    */
   public getCodeschoolProfile(): Observable<any> {
-    return this.http.get<any>('app/shared/data/mock-codeschool.json');
+    return this.http.get<any>('https://kevinliozon.com/data/mock-codeschool.json');
   }
 
 }

@@ -4,6 +4,7 @@ import { Skill } from '../../interfaces/skill.interface';
 import { SkillService } from '../../providers/skill/skill.service';
 // Services
 import { ModalService } from '../../providers/modal/modal.service';
+import { BsModalRef } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-skills',
@@ -16,6 +17,7 @@ export class SkillsComponent implements OnInit {
   public value = '';
   public detailsModal: any = {};
   public typeModal: string;
+  public bsModalRef: BsModalRef;
 
   constructor(private skillService: SkillService,
               private modalService: ModalService) { }

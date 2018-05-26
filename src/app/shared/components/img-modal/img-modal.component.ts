@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { BsModalRef } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-img-modal',
@@ -10,6 +11,6 @@ export class ImgModalComponent {
 
   @Input() public pic: any = {};
 
-  constructor() {}
+  constructor(public bsModalRef: BsModalRef) {}
 
 }

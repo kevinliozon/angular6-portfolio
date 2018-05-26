@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { GAnalyticsService } from '../../../providers/g-analytics/g-analytics.service';
+import { BsModalRef } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-modal',
@@ -11,9 +11,9 @@ export class DetailsModalComponent {
 
   @Input() public details: any;
   @Input() public type = '';
-  @Output() public goToProject = new EventEmitter();
+  // @Output() public goToProject = new EventEmitter();
 
-  constructor(private analyticsService: GAnalyticsService) { }
+  constructor(public bsModalRef: BsModalRef) { }
 
   /**
    * Check if the project is a role or a project
@@ -42,13 +42,13 @@ export class DetailsModalComponent {
    *
    * @param {any} project
    */
-  public goTo(project: any): void {
+  /*public goTo(project: any): void {
     this.analyticsService.captureCustomEvent(
       'navigation',
       `Navigate to details page for ${this.type}`,
       `${project.name}`,
       3);
     this.goToProject.emit(project);
-  }
+  }*/
 
 }

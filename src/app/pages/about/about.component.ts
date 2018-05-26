@@ -12,6 +12,7 @@ import { HobbyService } from '../../providers/hobby/hobby.service';
 import { PROFILE } from '../../shared/constants/profile';
 // Services
 import { ModalService } from '../../providers/modal/modal.service';
+import { BsModalRef } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-about',
@@ -28,6 +29,7 @@ export class AboutComponent implements OnInit {
   public skillsDesign: Array<Skill> = [];
   public detailsModal: any = {};
   public typeModal: string;
+  public bsModalRef: BsModalRef;
 
   constructor(private toolService: ToolService,
               private hobbyService: HobbyService,

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalModule } from 'ngx-bootstrap';
 // Modules
 import { AppRoutingModule } from './app-routing.module';
 import { ProvidersModule } from './providers/providers.module';
@@ -23,6 +24,8 @@ import { TermsComponent } from './pages/terms/terms.component';
 // Components
 import { ProfileCsComponent } from './pages/education/profile-cs/profile-cs.component';
 import { ProfileComponent } from './pages/home/profile/profile.component';
+import { DetailsModalComponent } from './shared/components/details-modal/details-modal.component';
+import { ImgModalComponent } from './shared/components/img-modal/img-modal.component';
 
 @NgModule({
   imports: [
@@ -32,7 +35,8 @@ import { ProfileComponent } from './pages/home/profile/profile.component';
     ProvidersModule,
     TranslationsModule,
     SharedModule,
-    PipesModule
+    PipesModule,
+    ModalModule.forRoot()
   ],
   declarations: [
     AppComponent,
@@ -51,6 +55,10 @@ import { ProfileComponent } from './pages/home/profile/profile.component';
     ProfileComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    DetailsModalComponent,
+    ImgModalComponent
+  ]
 })
 export class AppModule { }

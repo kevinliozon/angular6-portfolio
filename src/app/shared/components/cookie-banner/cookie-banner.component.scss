@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'buttons';
+
 
 .wrap-cookie {
   @include position(fixed, auto, 0px, 0px, 0px);
