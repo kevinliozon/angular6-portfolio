@@ -1,4 +1,6 @@
-/*
+@import 'variables';
+@import 'buttons';
+
 .card-reg {
   @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
   @include transition(all, 0.15s, ease, 0s);
@@ -58,4 +60,3 @@
     @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
   }
 }
-*/

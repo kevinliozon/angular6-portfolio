@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-h1 {
-  color: green;
-}
+
+/**
+ * Partials Import
+ * Variables partial should always be imported first first
+ */
+@import 'variables';
+@import 'containers';
+@import 'titles';
+@import 'fonts';
+@import 'buttons';
+@import 'lists';
+@import 'images';
+@import 'jumbotrons';
+@import 'modal';
+@import 'ellipsis';

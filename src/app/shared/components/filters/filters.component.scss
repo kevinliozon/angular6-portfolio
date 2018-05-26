@@ -1,9 +1,11 @@
-/*.container-filters {
+@import 'variables';
+
+.container-filters {
   margin-bottom: $gap-md;
-}*/
+}
 
 // Over xs
-/*.wrap-filters,
+.wrap-filters,
 .wrap-switch {
   @extend %block-half-centred;
   @include drop-shadow(false, 0px, 6px, 20px, 0px, $grey);
@@ -38,10 +40,10 @@
       @extend %btn-filter-anim;
     }
   }
-}*/
+}
 
 // Below xs
-/*.wrap-filters--alt {
+.wrap-filters--alt {
   text-align: center;
 
   .btn {
@@ -57,10 +59,10 @@
   .glyphicon {
     font-size: $font-mega;
   }
-}*/
+}
 
 // Modal
-/*.modal-filters {
+.modal-filters {
   text-align: center;
   margin-top: 50%;
 
@@ -71,4 +73,4 @@
       font-size: $font-big;
     }
   }
-}*/
+}

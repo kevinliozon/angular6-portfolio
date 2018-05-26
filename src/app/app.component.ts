@@ -8,7 +8,6 @@ import { RouteScrollService } from './providers/route-scroll/route-scroll.servic
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
 
   constructor(private scrollService: RouteScrollService) {}
 
