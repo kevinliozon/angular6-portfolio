@@ -7,6 +7,12 @@
 @import 'variables';
 
 /**
+ * Bootstrap variables overwrite
+ */
+
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/'; // fixes path issue
+
+/**
  * Bootstrap
  */
 
