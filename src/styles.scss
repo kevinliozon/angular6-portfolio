@@ -10,7 +10,7 @@
  * Bootstrap variables overwrite
  */
 
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/'; // fixes path issue
+// $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/'; // fixes glyphicons path issue
 
 /**
  * Bootstrap
@@ -23,7 +23,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/'; // fixes path issue
 // Reset and dependencies
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/normalize';
 // @import '~bootstrap-sass/assets/stylesheets/bootstrap/print';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
+// @import '~bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
 
 // Core CSS
 @import '~bootstrap-sass/assets/stylesheets/bootstrap/scaffolding';
