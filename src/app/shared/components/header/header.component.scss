@@ -98,7 +98,7 @@
     transform-origin: 0% top 0; // for scaling from top to bottom
     cursor: pointer;
 
-    li a {
+    li .nav-lang-label {
       padding: 15px 20px;
     }
 
@@ -123,17 +123,17 @@
 
 }
 
-// Burger Menu
-
 .navbar-toggle {
   border: none;
   margin: 20px 0px 20px 20px;
   box-sizing: content-box;
   height: 20px;
+}
 
-  &:not(.nav-lang) {
-    padding-right: 40px;
-  }
+// Burger Menu
+
+.btn-burger {
+  padding-right: 40px;
 
   .icon-bar {
     @include transition(all, 0.3s, ease-in, 0s);

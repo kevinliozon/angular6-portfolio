@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 // Services
 import { ResolveByIdService } from '../resolve-by-id/resolve-by-id.service';
-import {DetailsModalComponent} from '../../shared/components/details-modal/details-modal.component';
+import { DetailsModalComponent } from '../../shared/components/details-modal/details-modal.component';
 import { BsModalService } from 'ngx-bootstrap';
 import { ImgModalComponent } from '../../shared/components/img-modal/img-modal.component';
 
@@ -63,7 +63,6 @@ export class ModalService {
       Object.assign({},
         this.configs,
       {
-        class: 'modal-lg',
         initialState })
     );
   }

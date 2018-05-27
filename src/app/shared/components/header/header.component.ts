@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Renderer2 } from '@angular/core';
-/* SERVICES */
+// Services
 import { TranslationsService } from '../../../translations/service/translations.service';
 import { CookieService } from '../../../providers/cookie/cookie.service';
 import { HeaderTitleService } from '../../../providers/header-title/header-title.service';
-/* CONSTANTS */
+// Constants
 import { MENUS } from '../../../shared/constants/menus';
 
 @Component({
@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
    * Make selected language persistent even after refresh
    */
   private sessionLanguage(): void {
-    switch(this.cookieService.getCookie('language')) {
+    switch (this.cookieService.getCookie('language')) {
       case 'eng':
         this.selectLang(this.supportedLanguages[0].value, this.supportedLanguages[0].flag);
         break;
