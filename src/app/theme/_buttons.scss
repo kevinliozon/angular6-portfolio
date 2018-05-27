@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .btn-group--jumbo .btn-primary {
+    margin: 10px auto;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .btn-group--details,
   .btn-group--jumbo {

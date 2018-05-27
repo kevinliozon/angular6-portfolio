@@ -23,3 +23,14 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .wrap-home {
+    .jumbotron {
+      .img-group {
+        @include flex-layout(wrap, center, flex-start, flex-start);
+        margin: auto auto $gap-reg;
+      }
+    }
+  }
+}
