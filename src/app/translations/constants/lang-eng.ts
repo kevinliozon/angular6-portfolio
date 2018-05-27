@@ -42,7 +42,7 @@ export const LANG_ENG_TRANS = {
   'projects': 'Projects',
   'subjects': 'Subjects',
   'gallery': 'Gallery',
-  
+
   /*** BUTTONS ***/
   'agree': 'I agree',
   'why': 'Why',
@@ -54,7 +54,7 @@ export const LANG_ENG_TRANS = {
   'confidential': 'This project is under confidentiality clause. Images, Prototypes and Docs cannot be disclosed.',
   'cookie': `I use cookies to ease your journey and experience on this portfolio.
             However I need your consent beforehand.`,
-  
+
   /*** HOME ***/
   // Titles
   'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
@@ -73,7 +73,7 @@ export const LANG_ENG_TRANS = {
                of products related to IoT, insurtech, e-commerce and content-sharing among others. The diversity of
                these experiences helped me for broadening my ability to adapt to any kind of project.`,
   'homeText5': `I am available in London area. For any request, the best way to contact me is via LinkedIn or Email:`,
-  //Buttons
+  // Buttons
   'homeBtn0': 'Dev Practices',
   'homeBtn1': 'UX Practices',
   'homeBtn2': 'Projects',
@@ -87,7 +87,7 @@ export const LANG_ENG_TRANS = {
   'aboutTitle4': titles.aboutPage[4], 'aboutTitle5': titles.aboutPage[5],
   'aboutTitle6': titles.aboutPage[6], 'aboutTitle7': 'Some related skills:',
   // Texts
-  'aboutText0': `The first techs I learned were HTML, CSS, JavaScript, SQL and PHP. I slightly decided 
+  'aboutText0': `The first techs I learned were HTML, CSS, JavaScript, SQL and PHP. I slightly decided
                 to focus more on frontend technologies and to lean towards sophisticated JS frameworks as well as CSS
                 pre-processors like Sass. I usually rely on the official documentation of Angular and Ionic to stay
                 up to date. When I need to learn a new technology, CodeSchool is my go to solution as a starting point.`,
@@ -103,33 +103,33 @@ export const LANG_ENG_TRANS = {
 
   /*** PROJECTS ***/
   // Descs
-  '#projectDescHce': `Showcase WordPress website for an association of southern France hairdressers and estheticians. 
+  '#projectDescHce': `Showcase WordPress website for an association of southern France hairdressers and estheticians.
                       I served as UI designer, producing zonings, mockups and UI assets with Illustrator and Photoshop.
                       I had a lot of autonomy and could even work remotely from time to time.`,
-  '#projectDescPortfolioV1': `First portfolio realised during my first year at the institute of technology. It was 
-                              made with Flash and CSS3. Flash was not already "dead" at the time and I always 
+  '#projectDescPortfolioV1': `First portfolio realised during my first year at the institute of technology. It was
+                              made with Flash and CSS3. Flash was not already "dead" at the time and I always
                               wanted to create a website entirely based on it. Today the design may sound awkward
                               but at least I managed to make it through!`,
-  '#projectDescPortfolioV2': `My second portfolio, made during my year as bachelor with Edge Animate and CSS3. At the 
-                              time Edge was an attempt by Adobe to replace Flash by a jQuery based technology. It is 
-                              still working pretty well on every browsers. Unfortunately the reason why they stopped 
-                              developing Edge was mostly related to marketing and learning curve reasons. However I 
-                              really liked using it and made me realise of all the possibilities offered by jQuery at 
+  '#projectDescPortfolioV2': `My second portfolio, made during my year as bachelor with Edge Animate and CSS3. At the
+                              time Edge was an attempt by Adobe to replace Flash by a jQuery based technology. It is
+                              still working pretty well on every browsers. Unfortunately the reason why they stopped
+                              developing Edge was mostly related to marketing and learning curve reasons. However I
+                              really liked using it and made me realise of all the possibilities offered by jQuery at
                               the time.`,
-  '#projectDescPortfolio3': `This portfolio has been realised with Angular 2, Bootstrap and Gulp. It has been a
-                             long and enlightening side project because I was using it for training at Angular best 
-                             practices. Most of the UI assets are mine and done in SVG format. When I started it, 
-                             Angular was still in Beta RC2 version, Bootstrap 3 was the safest option as CSS framework
-                             because bootstrap 4 was still in Alpha. Next step will be to migrate the project to the
-                             latest Angular version and to use Angular Material instead of bootstrap.`,
-  '#projectDescDigitela':  `Corporate website of my first company. I was working on it in parallel of the clients' 
-                            projects when I had spare time. It was based on wordpress and the design was pretty basic 
-                            without that much of content. My role has been to rebuild the information architecture. 
-                            Then create a graphical identity to the site via the conception of UI assets with 
+  '#projectDescPortfolio3': `This portfolio has been realised with Angular 2, Bootstrap and Gulp initially. Then recently migrated to the
+                             version 6; making Gulp expendable as a result. This project has been also an opportunity for training at
+                             Angular best practices. Most of the UI assets are mine and done in SVG format. I plan to replace Bootstrap
+                             by Angular Material in the upcoming months. Because the first one has a disappointing synergy with
+                             Angular. Which forced me to use custom jQuery at some point to fix some missing interactions that even the
+                             npm plugin ngx-bootstrap could not. My plan is to get rid of this jQuery dependency too.`,
+  '#projectDescDigitela':  `Corporate website of my first company. I was working on it in parallel of the clients'
+                            projects when I had spare time. It was based on wordpress and the design was pretty basic
+                            without that much of content. My role has been to rebuild the information architecture.
+                            Then create a graphical identity to the site via the conception of UI assets with
                             Illustrator and Photoshop before implementing everything in the WordPress platform.`,
-  '#projectDescApags': `Website for an association related to cancer research. It has been my first web project for an 
-                        external client. It was for my internship during my sophomore year at the institute of 
-                        technology. I had a lot of autonomy for the design and the communication with my employer and 
+  '#projectDescApags': `Website for an association related to cancer research. It has been my first web project for an
+                        external client. It was for my internship during my sophomore year at the institute of
+                        technology. I had a lot of autonomy for the design and the communication with my employer and
                         the client has been great. Unfortunately the association has been dismantled since
                         reasons and the website does not exist anymore.`,
   '#projectDescEukiyo': `E-Ukiyo is an artistic contents sharing platform I created as an individual student project during
@@ -145,7 +145,7 @@ export const LANG_ENG_TRANS = {
                       the regions Burgundy and Franche-Comté and therefore of their respective universities.`,
   '#projectDescImakr': `Rebuilding iMakr's E-Commerce platform has been my very first project after I arrived in London.
                         This website is selling 3D printing industry related products and they wanted to revamp
-                        the overall design to make it more accessible to newcomers in this industry. Also it was 
+                        the overall design to make it more accessible to newcomers in this industry. Also it was
                         necessary to make the navigation and checkout process easier for the professionals.
                         My role has been to create a new design and present my ideas via complete mockups for each pages
                         and components. Then turning them into prototypes by using local HTML/CSS/jQuery pages.
@@ -155,10 +155,10 @@ export const LANG_ENG_TRANS = {
                       the site is supposed to offer lot more interactions with the different contents and user
                       profiles. My role has been similar to my contribution to iMakr. Creating new designs,
                       mocking-up/prototyping my ideas for each page and component before starting the development.`,
-  '#projectDescDoxy': `Doxy.me is an innovative telemedecine solution of which the company is based 
-                      in Provo (USA - Utah). This app aims to offer the best possible experience to the patient and 
+  '#projectDescDoxy': `Doxy.me is an innovative telemedecine solution of which the company is based
+                      in Provo (USA - Utah). This app aims to offer the best possible experience to the patient and
                       doctors. I have worked remotely for them as an Angular/Ionic consultant.`,
-  '#projectDescDnG': `An iOS ERP app for a Central London Real Estate Agent. The app is built with the framework Ionic 
+  '#projectDescDnG': `An iOS ERP app for a Central London Real Estate Agent. The app is built with the framework Ionic
                       in a way it communicates with their desktop ERP through a common API. It has been developed in a
                       way to handle different user profiles and rights. I had to intervene into the design process,
                       especially the latest phases and obviously in taking the responsibility of building the front-end
@@ -188,7 +188,7 @@ export const LANG_ENG_TRANS = {
 
   /*** ROLES ***/
   // Descs
-  '#roleDescSurely': `As Frontend Developer and interaction designer, my role is first and foremost to produce 
+  '#roleDescSurely': `As Frontend Developer and interaction designer, my role is first and foremost to produce
                       prototypes of applications as well as UI assets. Then implementing these designs, once validated,
                       thanks to the hybrid mobile framework Ionic,
                       built upon Cordova and Angular.`,
@@ -237,8 +237,8 @@ export const LANG_ENG_TRANS = {
   '#hobbyDescWindsurf': `I used to practice a lot when I was living in the south of France. However, it has become
                          quite difficult to keep up since I moved in London...`,
   '#hobbyDescHockey': `NHL follower since my childhood. Red Wings fan despite their terrible results for a few years now.`,
-  
-  
+
+
   /*** Skills ***/
   '#skillAngular': `One of the main Javascript Front-End frameworks. I really like the way it has evolved since the 1st
                     version. It is obviously the Javascript framework I decided to make my speciality of.`,

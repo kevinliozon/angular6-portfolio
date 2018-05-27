@@ -97,7 +97,7 @@ export class HeaderComponent implements OnInit {
     const body = document.getElementsByTagName('body')[0];
 
     this.fontHasChanged ?
-      this.renderer.addClass(body, 'font-big') : this.renderer.removeClass(body, 'font-big');
+      this.renderer.removeClass(body, 'font-big') : this.renderer.addClass(body, 'font-big');
 
     this.fontHasChanged = !this.fontHasChanged;
   }

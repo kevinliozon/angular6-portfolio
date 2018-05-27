@@ -19,20 +19,20 @@
 
             <!-- If PROJECT -->
             <h4 *ngIf="type === 'project' && details.company">
-              <span class="content-prefix">{{ 'as' | translate }}</span>
+              <span class="content-prefix">{{ 'as' | translate }}</span>&nbsp;
               {{ details.company.role }}
-              <span class="content-prefix">{{ 'at' | translate }}</span>
+              <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
               <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
             </h4>
             <!-- If ROLE -->
             <h4 *ngIf="type === 'role'">
-              <span class="content-prefix">{{ 'at' | translate }}</span>
+              <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
               <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
             </h4>
             <!-- If DIPLOMA -->
             <h4 *ngIf="type === 'diploma'">
-              <span class="content-prefix">{{ 'at' | translate }}</span>
-              <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>
+              <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
+              <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
               <span class="content-prefix" *ngIf="details.school.country != 'Online'">{{ 'in' | translate }}</span>
               {{ details.school.country }}
             </h4>

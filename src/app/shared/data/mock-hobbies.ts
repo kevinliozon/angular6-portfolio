@@ -2,7 +2,7 @@ import { Hobby } from '../../interfaces/hobby.interface';
 
 
 export let HOBBIES: Hobby[] = [
-{
+/*{
   'id': '#hobby6',
   'name': '#hobbyCollect',
   'image': '../../../assets/img/svg/hobbies/collect.svg',
@@ -15,7 +15,7 @@ export let HOBBIES: Hobby[] = [
   'image': '../../../assets/img/svg/hobbies/nexus.svg',
   'desc': '#hobbyDescModding',
   'url': 'https://www.nexusmods.com/users/681806'
-},
+},*/
 {
   'id': '#hobby4',
   'name': '#hobbyScuba',

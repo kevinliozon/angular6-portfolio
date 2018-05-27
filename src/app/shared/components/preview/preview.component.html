@@ -1,7 +1,7 @@
 <article class="wrap-preview" *ngIf="!!focusedItem">
 
   <h2>Preview</h2>
-  
+
   <header class="wrap-img-txt">
     <figure>
       <div class="img img-round">
@@ -9,29 +9,29 @@
         <img *ngIf="type === 'role'" [src]="focusedItem.company.logo" [alt]="focusedItem.company.name">
         <img *ngIf="type === 'diploma'" [src]="focusedItem.school.image" [alt]="focusedItem.school.name">
       </div>
-      
+
       <figcaption class="details-headings">
-  
+
         <h3 *ngIf="!focusedItem.confidentiality">{{ focusedItem.name | translate }}</h3>
         <h3 *ngIf="focusedItem.confidentiality">{{ focusedItem.confidentiality | translate }}</h3>
-        
+
         <h4>{{ focusedItem.category }}</h4>
-        
+
         <!-- If PROJECT -->
         <h4 *ngIf="type === 'project' && focusedItem.company">
           <span class="content-prefix">{{ 'as' | translate }}</span>
           {{ focusedItem.company.role }}
-          <span class="content-prefix">{{ 'at' | translate }}</span>
+          <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
           <a [href]="focusedItem.company.url" target="_blank">{{ focusedItem.company.name }}</a>
         </h4>
         <!-- If ROLE -->
         <h4 *ngIf="type === 'role'">
-          <span class="content-prefix">{{ 'at' | translate }}</span>
+          <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
           <a [href]="focusedItem.company.url" target="_blank">{{ focusedItem.company.name }}</a>
         </h4>
         <!-- If DIPLOMA -->
         <h4 *ngIf="type === 'diploma'">
-          <span class="content-prefix">{{ 'at' | translate }}</span>
+          <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
           <a [href]="focusedItem.school.url" target="_blank">{{ focusedItem.school.name }}</a>&nbsp;
           <span class="content-prefix" *ngIf="focusedItem.school.country != 'Online'">{{ 'in' | translate }}</span>
           {{ focusedItem.school.country }}

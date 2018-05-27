@@ -24,6 +24,10 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/gulp.svg'
     },
     {
+      'name': 'jQuery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
       'name': 'Illustrator',
       'logo': '../../../assets/img/svg/skills/illustrator.svg'
     },
@@ -41,7 +45,7 @@ export let PROJECTS: Project[] = [{
   },
   'confidentiality': null,
   'url': 'https://kevinliozon.com/',
-  'github': 'https://github.com/kevinliozon/angular2-portfolio'
+  'github': 'https://github.com/kevinliozon/angular6-portfolio'
 },
 {
   'id': '#project15',

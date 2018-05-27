@@ -42,7 +42,7 @@ export const LANG_FRA_TRANS = {
   'projects': 'Projets',
   'subjects': 'Matières',
   'gallery': 'Gallerie',
-  
+
   /*** BUTTONS ***/
   'agree': 'J\'accepte',
   'why': 'Pourquoi',
@@ -51,7 +51,7 @@ export const LANG_FRA_TRANS = {
   'live': 'Voir Live',
 
   /*** DISCLAIMERS ***/
-  'confidential': `Ce projet est soumis à une clause de confidentialité. 
+  'confidential': `Ce projet est soumis à une clause de confidentialité.
                    Aucune image, prototype ou documentation ne peut être dévoilée.`,
   'cookie': `J'utilise les cookies afin d'améliorer votre navigation et votre expérience sur mon portfolio.
              Cependant j'ai besoin de votre permission en premier.`,
@@ -121,12 +121,13 @@ export const LANG_FRA_TRANS = {
   '#projectDescPortfolioV2': `Mon deuxième portfolio, réalisé pendant mon année de licence pro avec Edge Animate
                               et CSS3. A cette époque, Edge était une tentative par Adobe pour remplacer Flash par une
                               technologie basée sur jQuery. Cela fonctionne toujours sur tous les navigateurs.`,
-  '#projectDescPortfolio3': `Ce portfolio a été réalisé avec Angular 2, Bootstrap et Gulp. Cela a été un projet long et
-                            intéressant car il m’aura aussi servi de terrain d’apprentissage pour Angular. La majorité
-                            des éléments graphiques m'appartiennent et sont en format SVG. Quand je l’ai démarré,
-                            Angular était encore en version beta RC2. Bootstrap 3 était l’option la plus sûre car la
-                            version 4 était encore en Alpha. La prochaine étape sera la migration vers la dernière
-                            version d’Angular et vers Angular Material au lieu de Bootstrap. `,
+  '#projectDescPortfolio3': `Ce portfolio a été réalisé avec Angular 2, Bootstrap et Gulp initialement puis migré vers la version 6
+                             récemment; Gulp n'étant plus nécessaire par conséquent. Ce projet a été aussi une opportunité d'apprentissage
+                             des bonnes pratiques sur Angular. La majorité des éléments visuels m'appartiennent et sont en format SVG.
+                             Je prévois de remplacer Bootstrap par Angular Material dans les mois qui viennent. Etant donné que le premier
+                             a une très mauvaise synergie avec Angular, me forçant à utiliser des scripts jQuery additionels afin de
+                             compenser l'absence de certaines intéractions que même le plugin npm ngx-bootstrap ne pouvait corriger. Mon
+                             plan est de me débarasser de cette dépendance à jQuery aussi.`,
   '#projectDescDigitela':  `Le site vitrine de mon premier employeur. Je travaillais dessus en parallèle des projets de
                             nos clients sur mon temps libre. Il s'agissait d'un site Wordpress et le design était plutôt
                             basique sans trop de contenus. Mon rôle a été de revoir l'architecture de l'information, puis
@@ -250,8 +251,8 @@ export const LANG_FRA_TRANS = {
                          devenu plutôt difficile de continuer à pratiquer depuis que j’ai bougé sur Londres...`,
   '#hobbyDescHockey': `Je suis la NHL depuis mon enfance. Fan des Red Wings malgré qu'ils ne soient plus ce qu'ils
                        étaient depuis quelques années maintenant.`,
-  
-  
+
+
   /*** Skills ***/
   '#skillAngular': `Un des principaux frameworks frontend Javascript. J'aime la façon dont il a évolué depuis la
                     version 1. J'ai bien évidement décidé d'en faire ma spécialité.`,

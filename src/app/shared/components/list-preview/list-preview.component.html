@@ -47,9 +47,9 @@
       <h5>
         <span *ngIf="!object.confidentiality">{{ object.name | translate }}</span>
         <span *ngIf="object.confidentiality">{{ object.confidentiality | translate }}</span>
-        <!-- PROJECT CLIENT -->
+        <!-- PROJECT CLIENT -->&nbsp;
         <span class="sub-label" *ngIf="type === 'project' && object.client">{{ 'for' | translate }} {{ object.client.name }}</span>
-        <!-- ROLE COMPANY  -->
+        <!-- ROLE COMPANY  -->&nbsp;
         <span class="sub-label" *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
       </h5>
     </figcaption>
