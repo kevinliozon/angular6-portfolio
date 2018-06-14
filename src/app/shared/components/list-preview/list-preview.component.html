@@ -46,9 +46,10 @@
     <figcaption class="grid-list-label ellipsis-one-line">
       <h5>
         <span *ngIf="!object.confidentiality">{{ object.name | translate }}</span>
-        <span *ngIf="object.confidentiality">{{ object.confidentiality | translate }}</span>
+        <span *ngIf="object.confidentiality">{{ object.category | translate }}</span>
         <!-- PROJECT CLIENT -->&nbsp;
-        <span class="sub-label" *ngIf="type === 'project' && object.client">{{ 'for' | translate }} {{ object.client.name }}</span>
+        <span class="sub-label" *ngIf="type === 'project' && object.client && !object.confidentiality">{{ 'for' | translate }} {{ object.client.name }}</span>
+        <span class="sub-label" *ngIf="type === 'project' && object.client && object.confidentiality">{{ 'for' | translate }} {{ object.confidentiality }}</span>
         <!-- ROLE COMPANY  -->&nbsp;
         <span class="sub-label" *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
       </h5>

@@ -19,7 +19,7 @@
             <h4 *ngIf="type === 'project' && details.company">
               <span class="content-prefix">{{ 'as' | translate }}</span>
               {{ details.company.role }}
-              <span class="content-prefix">{{ 'at' | translate }}</span>
+              <span class="content-prefix">{{ 'at' | translate }}</span>&nbsp;
               <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
             </h4>
           </figcaption>
