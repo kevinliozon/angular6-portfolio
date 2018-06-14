@@ -1,6 +1,8 @@
 @import 'variables';
 
 .wrap-preview {
+  background-color: $light;
+  color: $grey;
   position: fixed;
   padding-left: $gap-big;
   width: 40%;

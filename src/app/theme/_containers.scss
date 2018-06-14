@@ -22,11 +22,6 @@ body {
   .container-select {
     padding-right: 0;
   }
-
-  .container-preview {
-    background-color: $light;
-    color: $grey;
-  }
 }
 
 .wrap-ellipsis {
@@ -88,6 +83,16 @@ body {
       list-style-position:inside;
       text-indent: 0px;
     }
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .container-select {
+    width: 100%;
+  }
+
+  .container-preview {
+    display: none;
   }
 }
 

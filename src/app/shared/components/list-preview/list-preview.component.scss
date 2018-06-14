@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 700px) {
   .grid-list-cell {
     border-right: 0px;
     flex-wrap: wrap;
@@ -59,6 +59,10 @@
     > .grid-list-icn,
     > .grid-list-label {
       width: 100%;
+    }
+
+    > .grid-list-icn .img {
+      margin: 0 auto;
     }
 
     > .grid-list-label {

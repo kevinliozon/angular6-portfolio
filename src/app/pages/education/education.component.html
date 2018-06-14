@@ -15,11 +15,17 @@
 
   <main [ngSwitch]="category">
 
-    <!-- ACADEMIC -->
+    <!-- *** ACADEMIC *** -->
     <section class="row container-dual">
-      <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'overview'">
-        <app-list-preview [objects]="diplomas" [type]="'diploma'" (focusedItem)="focusItem($event)"></app-list-preview>
-      </div>
+
+      <!-- LIST -->
+      <app-list-preview
+        class="col-xs-12 col-sm-4 container-select"
+        [objects]="diplomas"
+        [type]="'diploma'"
+        (focusedItem)="focusItem($event)"
+        *ngSwitchCase="'overview'">
+      </app-list-preview>
 
       <!-- PREVIEW -->
       <app-preview
@@ -30,7 +36,7 @@
       </app-preview>
     </section>
 
-    <!-- CERTIFS -->
+    <!-- *** CERTIFS *** -->
     <section class="container" *ngSwitchCase="'codeschool'">
 
       <article class="jumbotron wrap-jumbo--sm">

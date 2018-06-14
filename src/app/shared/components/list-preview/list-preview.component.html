@@ -38,9 +38,9 @@
 
     <div class="grid-list-icn">
       <!-- PROJECT LOGO -->
-      <img *ngIf="type === 'project'" class="img img-float block-center-xs" [src]="object.image" [alt]="object.name"/>
+      <img *ngIf="type === 'project'" class="img img-float" [src]="object.image" [alt]="object.name"/>
       <!-- ROLE LOGO -->
-      <img *ngIf="type === 'role'" class="img img-float block-center-xs" [src]="object.company.logo" [alt]="object.company.name"/>
+      <img *ngIf="type === 'role'" class="img img-float" [src]="object.company.logo" [alt]="object.company.name"/>
     </div>
 
     <figcaption class="grid-list-label ellipsis-one-line">
@@ -48,8 +48,12 @@
         <span *ngIf="!object.confidentiality">{{ object.name | translate }}</span>
         <span *ngIf="object.confidentiality">{{ object.category | translate }}</span>
         <!-- PROJECT CLIENT -->&nbsp;
-        <span class="sub-label" *ngIf="type === 'project' && object.client && !object.confidentiality">{{ 'for' | translate }} {{ object.client.name }}</span>
-        <span class="sub-label" *ngIf="type === 'project' && object.client && object.confidentiality">{{ 'for' | translate }} {{ object.confidentiality }}</span>
+        <span class="sub-label" *ngIf="type === 'project' && object.client && !object.confidentiality">
+          {{ 'for' | translate }} {{ object.client.name }}
+        </span>
+        <span class="sub-label" *ngIf="type === 'project' && object.client && object.confidentiality">
+          {{ 'for' | translate }} {{ object.confidentiality }}
+        </span>
         <!-- ROLE COMPANY  -->&nbsp;
         <span class="sub-label" *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
       </h5>
