@@ -28,6 +28,10 @@
   @extend %no-margin;
   @include special-font($font-big, $grey);
 
+  &.centred {
+    @include position(absolute, auto, auto, auto, 40%);
+  }
+
   a {
     text-decoration: none;
   }
@@ -41,6 +45,14 @@
     color: $grey;
     margin-left: $gap-reg;
   }
+}
+
+.btn-back {
+  @include position(absolute, 0px, auto, 0px, 20px);
+  background-color: transparent;
+  color: $grey;
+  width: 50px;
+  font-size: 40px;
 }
 
 // Menu

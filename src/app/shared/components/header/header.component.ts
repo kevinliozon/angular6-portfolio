@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Renderer2 } from '@angular/core';
+import { Location } from '@angular/common';
 // Services
 import { TranslationsService } from '../../../translations/service/translations.service';
 import { CookieService } from '../../../providers/cookie/cookie.service';
@@ -24,7 +25,8 @@ export class HeaderComponent implements OnInit {
   constructor(private headerTitleService: HeaderTitleService,
               private translate: TranslationsService,
               private cookieService: CookieService,
-              private renderer: Renderer2) { }
+              private renderer: Renderer2,
+              private location: Location) { }
 
   ngOnInit() {
     // standing data
@@ -100,6 +102,27 @@ export class HeaderComponent implements OnInit {
       this.renderer.removeClass(body, 'font-big') : this.renderer.addClass(body, 'font-big');
 
     this.fontHasChanged = !this.fontHasChanged;
+  }
+
+  /**
+   * Detect if device is iOS to trigger specific UI changes and accessibility features
+   *
+   * @returns {boolean}
+   */
+  public isIos(): boolean {
+    const userAgent = navigator.userAgent || navigator.vendor;
+
+    if (/iPad|iPhone|iPod/.test(userAgent)) {
+      return true;
+    }
+  }
+
+  /**
+   * For iOS
+   * Go back to the previous page
+   */
+  public goBack(): void {
+    this.location.back();
   }
 
 }

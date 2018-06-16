@@ -18,7 +18,7 @@
             <img src="{{ currentFlag }}" /><span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <!-- Dropdown lang-->
+            <!-- Dropdown lang -->
             <li *ngFor="let lang of supportedLanguages"
                 (click)="selectLang(lang.value, lang.flag)" [class.selected]="isCurrentLang(lang.value)">
               <a class="nav-lang-label">{{ lang.display }}</a>
@@ -26,11 +26,16 @@
           </ul>
         </div>
 
+        <!-- iOS back button -->
+        <button type="button" class="btn btn-back" *ngIf="isIos()" (click)="goBack()">
+          <
+        </button>
+
         <!-- Logo -->
-        <h2 class="navbar-brand">
+        <h2 class="navbar-brand" [class.centred]="isIos()">
           <a [routerLink]="'home'" (click)="setTitle('Home')">
             <img class="header-logo" src="assets/img/svg/perso/monogram.svg" alt="Kevin Liozon">
-            <span class="header-label">Kevin Liozon</span>
+            <span class="header-label" [hidden]="isIos()">Kevin Liozon</span>
           </a>
         </h2>
       </div>
