@@ -1,9 +1,11 @@
-.container-filters {
+@import 'variables';
+
+.wrap-filters {
   margin-bottom: $gap-md;
 }
 
 // Over xs
-.btn-group.wrap-filters,
+.btn-group.btn-group--filters,
 .btn-group.wrap-switch {
   @extend %block-half-centred;
   @include drop-shadow(false, 0px, 6px, 20px, 0px, $grey);
@@ -18,20 +20,18 @@
   }
 }
 
-.wrap-filters {
-  min-width: 650px;
-}
-
 .btn-group--filters {
-  box-shadow: $grey;
-
-  // last filter has no border on its right
-  &:not(:last-child) {
-    border-right: 1px solid $light;
-  }
+  @include flex-layout(nowrap, space-around, stretch, stretch);
+  min-width: 650px;
 
   .btn {
     @extend %btn-filter;
+    width: 100%;
+
+    // last filter has no border on its right
+    &:not(:last-child) {
+      border-right: 2px solid $light;
+    }
 
     // Animation
     &.selected, &:focus {
@@ -39,6 +39,8 @@
     }
   }
 }
+
+
 
 // Below xs
 .wrap-filters--alt {

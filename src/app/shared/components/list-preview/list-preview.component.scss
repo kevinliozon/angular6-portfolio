@@ -1,7 +1,7 @@
 @import 'variables';
 
 .grid-list {
-  border-top: 0.5px solid $grey;
+  border-top: 1px solid $grey;
   cursor: pointer;
   margin-bottom: 0;
   min-height: 400px; // Prevent footer overlapping preview description when not enough item
@@ -13,6 +13,7 @@
   @include transition(all, 0.2s, ease-in, 0s);
   background-color: $light-grey;
   color: $grey;
+  margin-bottom: 0;
   padding: $gap-reg $gap-big $gap-reg $gap-reg;
 
   h5 > .sub-label {

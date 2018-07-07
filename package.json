@@ -1,5 +1,5 @@
 {
-  "name": "Kevin Liozon Portfolio",
+  "name": "KL-Portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,10 +21,12 @@
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/router": "^6.0.2",
     "@types/jquery": "^3.3.2",
+    "bootstrap": "^4.1.1",
     "bootstrap-sass": "^3.3.7",
     "core-js": "^2.5.4",
     "jquery": "^3.0.0",
     "ngx-bootstrap": "^3.0.0",
+    "popper.js": "^1.14.3",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

@@ -122,6 +122,11 @@ $padding-sm: 1rem;
   }
 }
 
+@mixin center-block($top, $bottom) {
+  display: block;
+  margin: $top auto $bottom;
+}
+
 @mixin flex-layout($hasWrap: nowrap, $justif: flex-start, $alignContent: stretch, $alignItems: stretch) {
   display: flex;
   flex-wrap: $hasWrap;

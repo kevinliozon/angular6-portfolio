@@ -48,11 +48,11 @@ export class AppComponent implements OnInit {
     $('.btn-burger').on('click', function(e) {
       e.stopPropagation(); // avoid click to propagate to window
 
-      if ($('.nav-menu').hasClass('in')) {
-        $('.nav-menu').removeClass('in');
+      if ($('.nav-menu').hasClass('show')) {
+        $('.nav-menu').removeClass('show');
         $(this).addClass('collapsed');
       } else {
-        $('.nav-menu').addClass('in');
+        $('.nav-menu').addClass('show');
         $(this).removeClass('collapsed');
       }
     });
@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
   private resetDropdowns() {
     $(window).on('click', function() {
       $('.dropdown').removeClass('open');
-      $('.nav-menu').removeClass('in');
+      $('.nav-menu').removeClass('show');
       $('.btn-burger').addClass('collapsed');
     });
   }

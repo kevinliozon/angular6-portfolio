@@ -471,7 +471,7 @@ export let PROJECTS: Project[] = [{
   },
   {
     'name': 'Grid',
-    'url': 'https://kevinliozon.com/prototypes/mmf_bootstrap_grid/index.html',
+    'url': 'https://kevinliozon.com/prototypes/mmf_bootstrap_grids/index.html',
   }],
   'docs': null,
   'dates': {

@@ -1,20 +1,18 @@
-<article class="card-reg thumbnail" [class.active]="focusedItemBtn">
+<article class="card card-reg" [class.active]="focusedItemBtn">
 
-  <div class="row">
-    <section class="card-image col-xs-4">
-      <figure class="img img-round--sm">
-        <img [src]="object.image || object.badge" [alt]="object.name || object.title">
-      </figure>
-    </section>
+  <section class="card-image">
+    <figure class="img img-round--sm">
+      <img [src]="object.image || object.badge" [alt]="object.name || object.title">
+    </figure>
+  </section>
 
-    <section class="card-info col-xs-8">
-        <header>
-          <h3 class="ellipsis-two-lines">{{ object.name || object.title | translate}}</h3>
-        </header>
+  <section class="card-info">
+      <header>
+        <h3 class="ellipsis-two-lines">{{ object.name || object.title | translate}}</h3>
+      </header>
 
-        <p *ngIf="object.desc">{{ object.desc | translate | ellipsis:50 }}</p>
-    </section>
-  </div>
+      <p *ngIf="object.desc">{{ object.desc | translate | ellipsis:50 }}</p>
+  </section>
 
   <!-- If not Codeschool certif (no badge attribute) -->
   <footer class="card-link">

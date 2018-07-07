@@ -1,6 +1,6 @@
 .jumbotron {
   &.wrap-jumbo {
-    @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
+    @include drop-shadow(false, 4px, 4px, 4px, -2px, $grey);
     background-color: $light;
     border-radius: 0;
   }
@@ -24,7 +24,7 @@
 .wrap-jumbo:nth-child(even) {
   // refers to parent
   .wrap-articles & {
-    @include drop-shadow(false, -3px, 3px, 3px, 0px, $grey);
+    @include drop-shadow(false, -4px, 4px, 4px, -2px, $grey);
 
     .content-jumbo {
       float: right;
