@@ -19,7 +19,7 @@ body {
   display: flex;
   margin-right: 0;
 
-  .container-select {
+  .wrap-list {
     padding-right: 0;
   }
 }
@@ -87,12 +87,9 @@ body {
 }
 
 @media screen and (max-height: 700px) {
-  .container-select {
-    width: 100%;
-  }
-
-  .container-preview {
-    display: none;
+  .wrap-list {
+    flex: 100%;
+    max-width: 100%;
   }
 }
 

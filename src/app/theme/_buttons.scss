@@ -1,6 +1,6 @@
 .btn {
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   font-size: $font-small;
 
   &:focus {
@@ -71,11 +71,11 @@
 
 @media screen and (max-width: 768px) {
   .btn-group--jumbo .btn-primary {
-    margin: 10px auto;
+    margin: 10px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .btn-group--details,
   .btn-group--jumbo {
     @include flex-layout(wrap, center, flex-start, flex-start);

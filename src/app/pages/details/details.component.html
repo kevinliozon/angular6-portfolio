@@ -1,6 +1,6 @@
 <div class="container-fluid wrap-details">
   <div class="row">
-    <div class="col-xs-12 col-md-5">
+    <div class="col-12 col-md-5">
 
       <header class="wrap-img-txt">
         <figure>
@@ -104,7 +104,7 @@
     </div>
 
 
-    <div class="col-xs-12 col-md-7" *ngIf="!isConfidential()">
+    <div class="col-12 col-md-7" *ngIf="!isConfidential()">
 
       <section class="img-group" *ngIf="details.gallery">
         <header class="header-sub"><h5>{{ 'gallery' | translate }}</h5></header>
@@ -135,7 +135,7 @@
 
     </div>
 
-    <div class="col-xs-12 col-md-7 wrap-confidential" *ngIf="isConfidential()">
+    <div class="col-12 col-md-7 wrap-confidential" *ngIf="isConfidential()">
       <p>{{ 'confidential' | translate }}</p>
     </div>
 

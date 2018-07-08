@@ -4,7 +4,7 @@
   <main class="row container-dual">
     <!-- LIST -->
     <app-list-preview
-      class="col-xs-12 col-sm-4 container-select block-center-xs"
+      class="col-12 col-md-4 wrap-list"
       [objects]="roles"
       [type]="'role'"
       [filterValue]="filterValue"
@@ -12,6 +12,6 @@
     </app-list-preview>
 
     <!-- PREVIEW -->
-    <app-preview class="col-xs-8 container-preview d-xs-none" [focusedItem]="focusedItem" [type]="'role'"></app-preview>
+    <app-preview class="col-8 container-preview d-xs-none" [focusedItem]="focusedItem" [type]="'role'"></app-preview>
   </main>
 </div>

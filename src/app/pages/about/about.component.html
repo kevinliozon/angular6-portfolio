@@ -5,7 +5,7 @@
     <article id="about-fed" class="jumbotron wrap-jumbo">
       <div class="row">
 
-        <section class="content-jumbo col-xs-12 col-sm-8">
+        <section class="content-jumbo col-12 col-md-8">
           <header>
             <h2>{{ 'aboutTitle0' | translate }}</h2>
           </header>
@@ -21,7 +21,7 @@
           </footer>
         </section>
 
-        <figure class="col-xs-12 col-sm-4 img-jumbo">
+        <figure class="col-12 col-md-4 img-jumbo">
           <img [src]="details.images.dev">
         </figure>
 
@@ -32,7 +32,7 @@
     <article id="about-ux" class="jumbotron wrap-jumbo">
       <div class="row">
 
-        <section class="content-jumbo col-xs-12 col-sm-8">
+        <section class="content-jumbo col-12 col-md-8">
           <header>
             <h2>{{ 'aboutTitle1' | translate }}</h2>
           </header>
@@ -47,7 +47,7 @@
           </footer>
         </section>
 
-        <figure class="col-xs-12 col-sm-4 img-jumbo">
+        <figure class="col-12 col-md-4 img-jumbo">
           <img [src]="details.images.design">
         </figure>
 
@@ -55,43 +55,51 @@
     </article>
   </main>
 
-  <section id="about-tools" class="wrap-cards row">
-    <header><h2>{{ 'aboutTitle2' | translate }}</h2></header>
-    <app-card
-      class="col-xs-12 col-sm-4 col-md-3"
-      *ngFor="let tool of tools"
-      [hidden]="!tool.featured"
-      [object]="tool"
-      (moreInfo)="openModal($event, 'tool')">
-    </app-card>
+  <section id="about-tools" class="wrap-cards">
+    <header>
+      <h2>{{ 'aboutTitle2' | translate }}</h2>
+    </header>
+
+    <div class="row">
+      <app-card
+        class="col-12 col-md-4 col-lg-3"
+        *ngFor="let tool of tools"
+        [hidden]="!tool.featured"
+        [object]="tool"
+        (moreInfo)="openModal($event, 'tool')">
+      </app-card>
+    </div>
   </section>
 
 
   <article id="about-experiences" class="jumbotron wrap-jumbo">
     <div class="row">
 
-      <section class="content-jumbo col-xs-12 col-sm-8">
+      <section class="content-jumbo col-12 col-md-8">
         <header>
           <h2>{{ 'aboutTitle3' | translate }}</h2>
         </header>
         <p>{{ 'aboutText2' | translate }}</p>
       </section>
 
-      <figure class="col-xs-12 col-sm-4 img-jumbo">
+      <figure class="col-12 col-md-4 img-jumbo">
         <img [src]="details.images.process">
       </figure>
 
     </div>
   </article>
 
-  <section id="about-hobbies" class="wrap-cards row">
+  <section id="about-hobbies" class="wrap-cards">
     <header><h2>{{ 'aboutTitle4' | translate }}</h2></header>
-    <app-card
-      class="col-xs-12 col-sm-4 col-md-3"
-      *ngFor="let hobby of hobbies"
-      [object]="hobby"
-      (moreInfo)="openModal($event, 'hobby')">
-    </app-card>
+
+    <div class="row">
+      <app-card
+        class="col-12 col-md-4 col-lg-3"
+        *ngFor="let hobby of hobbies"
+        [object]="hobby"
+        (moreInfo)="openModal($event, 'hobby')">
+      </app-card>
+    </div>
   </section>
 
 </div>

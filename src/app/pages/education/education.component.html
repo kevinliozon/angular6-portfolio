@@ -16,7 +16,7 @@
 
       <!-- LIST -->
       <app-list-preview
-        class="col-xs-12 col-sm-4 container-select"
+        class="col-12 col-md-4 wrap-list"
         [objects]="diplomas"
         [type]="'diploma'"
         (focusedItem)="focusItem($event)"
@@ -25,7 +25,7 @@
 
       <!-- PREVIEW -->
       <app-preview
-        class="col-xs-8 container-preview d-xs-none"
+        class="col-8 container-preview d-xs-none"
         *ngIf="category === 'overview'"
         [focusedItem]="focusedItem"
         [type]="'diploma'">
@@ -40,7 +40,7 @@
       </article>
 
       <section class="row container wrap-center">
-        <app-card class="col-xs-12 col-sm-4 col-md-3" *ngFor="let certif of csCertifs" [object]="certif"></app-card>
+        <app-card class="col-12 col-md-4 col-lg-3" *ngFor="let certif of csCertifs" [object]="certif"></app-card>
       </section>
 
     </section>

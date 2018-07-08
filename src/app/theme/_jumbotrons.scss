@@ -47,18 +47,37 @@
   Media Queries
  */
 @media screen and (max-width: 768px) {
-  .container {
-    .jumbotron {
-      &.wrap-jumbo {
-        @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
-      }
+  .jumbotron {
+    &.wrap-jumbo {
+      @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
 
-      &.wrap-jumbo--sm {
-        max-width: 80%;
+      &:nth-child(even) {
+        .wrap-articles & {
+          @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+        }
       }
     }
-    .img-jumbo img {
-      width: 50%;
+
+    &.wrap-jumbo--sm {
+      max-width: 80%;
+    }
+  }
+  .img-jumbo img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    &.wrap-jumbo {
+      @include drop-shadow(false, 0px, 0px, 0px, 0px, $grey);
+      padding: $gap-md;
+
+      &:nth-child(even) {
+        .wrap-articles & {
+          @include drop-shadow(false, 0px, 0px, 0px, 0px, $grey);
+        }
+      }
     }
   }
 }
