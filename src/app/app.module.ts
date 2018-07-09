@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModalModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { CollapseModule } from 'ngx-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // Modules
 import { AppRoutingModule } from './app-routing.module';
 import { ProvidersModule } from './providers/providers.module';
@@ -40,7 +41,8 @@ import { ImgModalComponent } from './shared/components/img-modal/img-modal.compo
     PipesModule,
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    NgbModule.forRoot()
   ],
   declarations: [
     AppComponent,

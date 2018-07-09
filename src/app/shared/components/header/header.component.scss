@@ -25,6 +25,7 @@
 
 // Cell height
 .navbar-brand,
+.nav-lang,
 .nav > li {
   height: $header-height;
 }
@@ -115,7 +116,7 @@
     width: 100px;
     text-align: center;
     display: block;
-    transform-origin: 0% top 0; // for scaling from top to bottom
+    transform-origin: 0 top 0; // for scaling from top to bottom
     cursor: pointer;
 
     .nav-lang-label {
@@ -133,11 +134,11 @@
     }
   }
 
-  .dropdown-menu:not(.open) {
+  .dropdown-menu:not(.show) {
     @include anim-dropdown(0);
   }
 
-  &.open > .dropdown-menu {
+  &.show > .dropdown-menu {
     @include anim-dropdown(1);
   }
 
@@ -235,10 +236,6 @@
     .navbar-collapse & {
       display: none; // remove caret and collapsible menu's lang selector
     }
-  }
-
-  .dropdown-menu {
-    margin-top: 20px;
   }
 }
 

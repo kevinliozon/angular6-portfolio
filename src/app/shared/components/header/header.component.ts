@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   public menu = MENUS.MAIN || 'Could not render the menu';
   public pageHasChanged = false;
   public fontHasChanged = false;
+  public navbarCollapsed = true;
 
   constructor(private headerTitleService: HeaderTitleService,
               private translate: TranslationsService,

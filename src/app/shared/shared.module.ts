@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 // Modules
 import { AppRoutingModule } from '../app-routing.module';
 import { PipesModule } from './pipes/pipes.module';
@@ -20,7 +21,8 @@ import { ListPreviewComponent } from './components/list-preview/list-preview.com
     AppRoutingModule,
     CommonModule,
     PipesModule,
-    TranslationsModule
+    TranslationsModule,
+    NgbModule
   ],
   declarations: [
     CardComponent,
